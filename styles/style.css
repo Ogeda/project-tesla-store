@@ -12,4 +12,77 @@ ul {
 body {
   background: #fff;
 }
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.menu .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .logo svg {
+  width: 100px;
+  fill: #fff;
+}
+
+.menu .logo .link-principal {
+  font: 400 14px "Roboto", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.menu .logo .link-principal::before {
+  content: "|";
+  padding: 0 16px;
+}
+
+.menu .menu-lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .menu-lista .menu-item h3,
+.menu .menu-lista .menu-item a {
+  display: block;
+  cursor: pointer;
+  padding: 0 15px;
+  font: 400 14px "Roboto", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 52px;
+}
+
+.menu .menu-lista .menu-item .item-lupa svg {
+  fill: #fff;
+  display: block;
+  padding: 18px 0;
+  height: 16px;
+  width: 16px;
+}
+
+.menu .menu-lista .menu-item .item-carrinho svg {
+  fill: #fff;
+  display: block;
+  padding: 15px 0;
+  height: 22px;
+  width: 22px;
+}
 /*# sourceMappingURL=style.css.map */

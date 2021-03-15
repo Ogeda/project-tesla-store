@@ -6,11 +6,54 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+
   .logo {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 100px;
+      fill: $cor-clara1;
+    }
+
+    .link-principal {
+      @include texto-1(14px, $cor-clara1);
+
+      &::before {
+        content: "|";
+        padding: 0 16px;
+      }
+    }
   }
 
   .menu-lista {
+    display: flex;
     .menu-item {
+      h3,
+      a {
+        display: block;
+        cursor: pointer;
+        padding: 0 15px;
+        @include texto-1(14px, $cor-clara1);
+        text-transform: uppercase;
+        line-height: 52px;
+      }
+
+      .item-lupa svg {
+        fill: $cor-clara1;
+        display: block;
+        padding: 18px 0;
+        height: 16px;
+        width: 16px;
+      }
+
+      .item-carrinho svg {
+        fill: $cor-clara1;
+        display: block;
+        padding: 15px 0;
+        height: 22px;
+        width: 22px;
+      }
     }
   }
 }
