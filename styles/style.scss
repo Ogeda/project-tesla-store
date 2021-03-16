@@ -3,6 +3,7 @@
 
 // Cores
 $cor-clara1: #fff;
+$cor-escura1: #000;
 
 // Funcoes
 @mixin texto-1($tamanho, $cor) {
@@ -11,6 +12,13 @@ $cor-clara1: #fff;
   letter-spacing: 2px;
 }
 
+@mixin texto-2($tamanho, $cor) {
+  font: 500 $tamanho "Roboto", sans-serif;
+  color: $cor;
+  letter-spacing: 2px;
+}
+
 @import "geral";
 @import "menu";
 @import "destaque";
+@import "conteudo";

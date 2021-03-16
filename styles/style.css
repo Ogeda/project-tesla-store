@@ -13,6 +13,11 @@ body {
   background: #fff;
 }
 
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .menu {
   position: absolute;
   top: 0;
@@ -84,5 +89,69 @@ body {
   padding: 15px 0;
   height: 22px;
   width: 22px;
+}
+
+.conteudo .linha {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conteudo .linha .coluna {
+  padding: 12px 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.conteudo .linha .coluna + .coluna {
+  padding-left: 24px;
+}
+
+.conteudo .conteudo-area {
+  display: block;
+  position: relative;
+}
+
+.conteudo .conteudo-area + .conteudo-area {
+  margin-top: 16px;
+}
+
+.conteudo .conteudo-area img {
+  display: block;
+  width: 100%;
+}
+
+.conteudo .conteudo-area h3 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  line-height: 40px;
+  margin-top: -20px;
+  text-align: center;
+  font: 500 24px "Roboto", sans-serif;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.conteudo .conteudo-area.conteudo-texto-claro h3 {
+  color: #fff;
+}
+
+.conteudo .conteudo-area.conteudo-topo h3 {
+  top: 20%;
+  margin-top: 0;
+}
+
+.conteudo .conteudo-area.conteudo-esquerda h3 {
+  left: 15%;
+  text-align: left;
+}
+
+.conteudo .conteudo-area.conteudo-texto-direita h3 {
+  right: 15%;
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

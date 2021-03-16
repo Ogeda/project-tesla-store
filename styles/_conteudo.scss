@@ -1,0 +1,64 @@
+.conteudo {
+  .linha {
+    width: 100%;
+    display: flex;
+
+    .coluna {
+      padding: 12px 0 0;
+      flex: 1;
+
+      + .coluna {
+        padding-left: 24px;
+      }
+    }
+  }
+
+  .conteudo-area {
+    display: block;
+    position: relative;
+
+    + .conteudo-area {
+      margin-top: 16px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    h3 {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      line-height: 40px;
+      margin-top: -20px;
+      text-align: center;
+      @include texto-2(24px, $cor-escura1);
+    }
+
+    &.conteudo-texto-claro {
+      h3 {
+        color: $cor-clara1;
+      }
+    }
+    &.conteudo-topo {
+      h3 {
+        top: 20%;
+        margin-top: 0;
+      }
+    }
+    &.conteudo-esquerda {
+      h3 {
+        left: 15%;
+        text-align: left;
+      }
+    }
+    &.conteudo-texto-direita {
+      h3 {
+        right: 15%;
+        text-align: right;
+      }
+    }
+  }
+}
