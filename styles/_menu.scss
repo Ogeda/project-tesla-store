@@ -1,5 +1,5 @@
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -53,6 +53,27 @@
         padding: 15px 0;
         height: 22px;
         width: 22px;
+      }
+    }
+  }
+
+  &:hover {
+    background: $cor-clara1;
+
+    .link-principal {
+      color: $cor-escura1 !important;
+    }
+
+    .logo svg,
+    .item-lupa svg,
+    .item-carrinho svg {
+      fill: $cor-escura1 !important;
+    }
+
+    .menu-item {
+      h3,
+      a {
+        color: $cor-escura1 !important;
       }
     }
   }

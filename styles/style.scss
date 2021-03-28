@@ -3,7 +3,9 @@
 
 // Cores
 $cor-clara1: #fff;
+$cor-clara2: #d0d1d2;
 $cor-escura1: #000;
+$cor-escura2: #393c41;
 
 // Funcoes
 @mixin texto-1($tamanho, $cor) {
@@ -22,3 +24,4 @@ $cor-escura1: #000;
 @import "menu";
 @import "destaque";
 @import "conteudo";
+@import "rodape";

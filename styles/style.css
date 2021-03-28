@@ -19,7 +19,7 @@ main {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -91,6 +91,25 @@ main {
   width: 22px;
 }
 
+.menu:hover {
+  background: #fff;
+}
+
+.menu:hover .link-principal {
+  color: #000 !important;
+}
+
+.menu:hover .logo svg,
+.menu:hover .item-lupa svg,
+.menu:hover .item-carrinho svg {
+  fill: #000 !important;
+}
+
+.menu:hover .menu-item h3,
+.menu:hover .menu-item a {
+  color: #000 !important;
+}
+
 .conteudo .linha {
   width: 100%;
   display: -webkit-box;
@@ -153,5 +172,39 @@ main {
 .conteudo .conteudo-area.conteudo-texto-direita h3 {
   right: 15%;
   text-align: right;
+}
+
+.conteudo .conteudo-area:hover img {
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  -webkit-box-shadow: 1px 1px 4px #d0d1d2;
+          box-shadow: 1px 1px 4px #d0d1d2;
+}
+
+footer {
+  padding: 27px 0;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer nav ul li {
+  padding: 8px 16px 8px 0px;
+}
+
+footer nav ul li a {
+  font: 500 12px "Roboto", sans-serif;
+  color: #393c41;
+  letter-spacing: 2px;
+}
+
+footer nav ul li a:hover {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

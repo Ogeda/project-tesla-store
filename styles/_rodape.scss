@@ -1,0 +1,22 @@
+footer {
+  padding: 27px 0;
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        padding: 8px 16px 8px 0px;
+
+        a {
+          @include texto-2(12px, $cor-escura2);
+
+          &:hover {
+            color: $cor-escura1;
+          }
+        }
+      }
+    }
+  }
+}
