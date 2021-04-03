@@ -18,8 +18,27 @@ main {
   margin: 0 auto;
 }
 
+.menu:hover .link-principal, .menu.menu-escuro .link-principal {
+  color: #000 !important;
+}
+
+.menu:hover .logo svg, .menu.menu-escuro .logo svg,
+.menu:hover .item-lupa svg,
+.menu.menu-escuro .item-lupa svg,
+.menu:hover .item-carrinho svg,
+.menu.menu-escuro .item-carrinho svg {
+  fill: #000 !important;
+}
+
+.menu:hover .menu-item h3, .menu.menu-escuro .menu-item h3,
+.menu:hover .menu-item a,
+.menu.menu-escuro .menu-item a {
+  color: #000 !important;
+}
+
 .menu {
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
@@ -92,22 +111,7 @@ main {
 }
 
 .menu:hover {
-  background: #fff;
-}
-
-.menu:hover .link-principal {
-  color: #000 !important;
-}
-
-.menu:hover .logo svg,
-.menu:hover .item-lupa svg,
-.menu:hover .item-carrinho svg {
-  fill: #000 !important;
-}
-
-.menu:hover .menu-item h3,
-.menu:hover .menu-item a {
-  color: #000 !important;
+  background: #fff !important;
 }
 
 .conteudo .linha {

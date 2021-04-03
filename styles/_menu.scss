@@ -1,5 +1,25 @@
+%menu-fonte-escura {
+  .link-principal {
+    color: $cor-escura1 !important;
+  }
+
+  .logo svg,
+  .item-lupa svg,
+  .item-carrinho svg {
+    fill: $cor-escura1 !important;
+  }
+
+  .menu-item {
+    h3,
+    a {
+      color: $cor-escura1 !important;
+    }
+  }
+}
+
 .menu {
   position: fixed;
+  z-index: 9999;
   top: 0;
   left: 0;
   right: 0;
@@ -58,23 +78,11 @@
   }
 
   &:hover {
-    background: $cor-clara1;
+    background: $cor-clara1 !important;
+    @extend %menu-fonte-escura;
+  }
 
-    .link-principal {
-      color: $cor-escura1 !important;
-    }
-
-    .logo svg,
-    .item-lupa svg,
-    .item-carrinho svg {
-      fill: $cor-escura1 !important;
-    }
-
-    .menu-item {
-      h3,
-      a {
-        color: $cor-escura1 !important;
-      }
-    }
+  &.menu-escuro {
+    @extend %menu-fonte-escura;
   }
 }
