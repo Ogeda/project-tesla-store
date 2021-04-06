@@ -77,6 +77,45 @@
     }
   }
 
+  .submenu {
+    display: flex;
+    background: $cor-clara1;
+    padding: 60px 100px 100px;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    left: 0;
+
+    div {
+      flex: 1;
+      margin: 0 12px;
+      a {
+        display: block;
+        @include texto-1(14px, $cor-escura1);
+        line-height: 34px;
+      }
+
+      .submenu-titulo {
+        @include texto-2(14px, $cor-escura1);
+        border-bottom: 5px solid $cor-clara2;
+        padding-bottom: 18px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .submenu-destaque {
+      flex: 2;
+      img {
+        width: 100%;
+      }
+      h4 {
+        margin-top: 24px;
+        text-align: center;
+        @include texto-2(24px, $cor-escura2);
+      }
+    }
+  }
+
   &:hover {
     background: $cor-clara1 !important;
     @extend %menu-fonte-escura;
